@@ -1,0 +1,1 @@
+C:\Users\belaz\Documents\development\algorithmic_coding_skills\LeetCode\github\LeetCode\Exercices\easy\Two_Sum\Two_Sum_rs\target\debug\Two_Sum.exe: C:\Users\belaz\Documents\development\algorithmic_coding_skills\LeetCode\github\LeetCode\Exercices\easy\Two_Sum\Two_Sum_rs\src\main.rs

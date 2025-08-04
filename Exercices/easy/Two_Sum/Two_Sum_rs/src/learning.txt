@@ -1,0 +1,69 @@
+main erros : 
+
+[02/08/2024.22h39] Rust error E0277
+    println!("{} + {} = {}",array[loopindex], numbers, array[loopindex] + numbers)    
+                                                            ^^^^^^^^^^^^slice indices are of type `usize` or ranges of `usize`
+
+            RUST HELP :
+            = help: the trait `SliceIndex<[i32]>` is not implemented for `i32`
+            = help: the following other types implement trait `SliceIndex<T>`:
+                    `usize` implements `SliceIndex<ByteStr>`
+                    `usize` implements `SliceIndex<[T]>`
+            = note: required for `[i32]` to implement `Index<i32>`
+            = note: 1 redundant requirement hidden
+            = note: required for `[i32; 5]` to implement `Index<i32>
+
+        rustc --explain E0277
+
+    SOLVED : 
+
+        Just had to mention that loopindex is usize so it can loop through array indexes 
+        let loopindex = loopindex as usize;
+
+[03/08/2025.14h40] I AM SO DUMB WOW !!!
+
+    SO, LeetCode mendate to do the code with a function : 
+    impl Solution {
+        pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+            
+        }
+    }
+
+    This facilitates EVERYTHING !!!
+
+    But now I have to learn about Vectors (and not hell inputs, thats good), and adapt the code.
+
+Sources : 
+
+Educative : 
+https://www.educative.io/answers/what-is-the-impl-keyword-in-rust -> Learns more about impl keyword 
+
+Youtube :
+https://www.youtube.com/watch?v=PQBX-ev5q2k -> Good introduction on user inputs (detailed)
+https://www.youtube.com/watch?v=07pDD0uLjYc&t=2s -> Learned more on how to handle errors with inputs
+
+GeeksForGeeks : 
+https://www.geeksforgeeks.org/rust/rust-array/ -> Explained in depth arrays, syntax, details
+
+Easy Rust :
+https://dhghomon.github.io/easy_rust/Chapter_63.html -> Some introduction some user inputs
+
+RUST (users) : 
+https://users.rust-lang.org/t/solved-need-help-with-slice/24296/2 -> Helped me with E0277 error
+
+StackOverflow :
+https://stackoverflow.com/questions/65977255/what-does-impl-for-mean -> Some light introduction to impl, Trait and struct.
+
+W3Schools : 
+[02/08/2025.] https://www.w3schools.com/rust/rust_arrays.php
+[02/08/2025.] https://www.w3schools.com/rust/rust_operators.php
+[02/08/2025.] https://www.w3schools.com/rust/rust_constants.php
+[02/08/2025.] https://www.w3schools.com/rust/rust_data_types.php
+[02/08/2025.] https://www.w3schools.com/rust/rust_variables.php
+[02/08/2025.] https://www.w3schools.com/rust/rust_comments.php
+[03/08/2025.14h50] https://www.w3schools.com/rust/rust_vectors.php -> Detailed introduction on Vectors
+[03/08/2025.14h55] https://www.w3schools.com/rust/rust_functions.php
+[03/08/2025.15h23] https://www.w3schools.com/rust/rust_structs.php -> So I understand more about structs (the impl thing).
+
+Programiz :
+https://www.programiz.com/rust/vector -> Some gentle introduction on Vectors
