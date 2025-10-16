@@ -1,0 +1,5 @@
+[16/10.2025.13h56] Reasoning attempt 1 :
+    We'll do the classic :
+    Convert the number into a string
+    compare if the string reversed is the same as normal
+    return true if so and false if not.

@@ -1,0 +1,267 @@
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error: comparison operators cannot be chained
+    --> src/main.rs:4:20
+    |
+    4 |         if (-2**31 <= x <= (2**31)-1) {
+    |                    ^^   ^^
+    |
+    help: split the comparison into two
+    |
+    4 |         if (-2**31 <= x && x <= (2**31)-1) {
+    |                         ++++
+
+    error[E0412]: cannot find type `Solution` in this scope
+    --> src/main.rs:1:6
+    |
+    1 | impl Solution {
+    |      ^^^^^^^^ not found in this scope
+
+    error[E0425]: cannot find value `name` in this scope
+    --> src/main.rs:6:36
+    |
+    6 |             println!("Length: {}", name.len());
+    |                                    ^^^^ not found in this scope
+
+    warning: unnecessary parentheses around `if` condition
+    --> src/main.rs:4:12
+    |
+    4 |         if (-2**31 <= x <= (2**31)-1) {
+    |            ^                        ^
+    |
+    = note: `#[warn(unused_parens)]` on by default
+    help: remove these parentheses
+    |
+    4 -         if (-2**31 <= x <= (2**31)-1) {
+    4 +         if -2**31 <= x <= (2**31)-1 {
+    |
+
+    error[E0601]: `main` function not found in crate `Palindrome_Number`
+    --> src/main.rs:9:2
+    |
+    9 | }
+    |  ^ consider adding a `main` function to `src/main.rs`
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:4:16
+    |
+    4 |         if (-2**31 <= x <= (2**31)-1) {
+    |                ^^^ can't be dereferenced
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:4:31
+    |
+    4 |         if (-2**31 <= x <= (2**31)-1) {
+    |                               ^^^ can't be dereferenced
+
+    error[E0308]: mismatched types
+    --> src/main.rs:4:28
+    |
+    4 |         if (-2**31 <= x <= (2**31)-1) {
+    |             -----------    ^^^^^^^^^ expected `bool`, found integer
+    |             |
+    |             expected because this is `bool`
+
+    error[E0308]: mismatched types
+    --> src/main.rs:4:39
+    |
+    4 |           if (-2**31 <= x <= (2**31)-1) {
+    |  _______________________________________^
+    5 | |             let x_string = x.to_string();
+    6 | |             println!("Length: {}", name.len());
+    7 | |         }
+    | |_________^ expected `bool`, found `()`
+
+    Some errors have detailed explanations: E0308, E0412, E0425, E0601, E0614.
+    For more information about an error, try `rustc --explain E0308`.
+    warning: `Palindrome_Number` (bin "Palindrome_Number") generated 1 warning
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 8 previous errors; 1 warning emitted
+-> Set condition to -2**31 <= x && x <= (2**31)-1
+
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error[E0412]: cannot find type `Solution` in this scope
+    --> src/main.rs:2:10
+    |
+    2 |     impl Solution {
+    |          ^^^^^^^^ not found in this scope
+
+    error[E0425]: cannot find value `name` in this scope
+    --> src/main.rs:7:36
+    |
+    7 |             println!("Length: {}", name.len());
+    |                                    ^^^^ not found in this scope
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:5:15
+    |
+    5 |         if -2**31 <= x && x <= (2**31)-1 {
+    |               ^^^ can't be dereferenced
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:5:35
+    |
+    5 |         if -2**31 <= x && x <= (2**31)-1 {
+    |                                   ^^^ can't be dereferenced
+
+    error[E0308]: mismatched types
+    --> src/main.rs:5:42
+    |
+    5 |           if -2**31 <= x && x <= (2**31)-1 {
+    |  __________________________________________^
+    6 | |             let x_string = x.to_string();
+    7 | |             println!("Length: {}", name.len());
+    8 | |             }
+    | |_____________^ expected `bool`, found `()`
+
+    Some errors have detailed explanations: E0308, E0412, E0425, E0614.
+    For more information about an error, try `rustc --explain E0308`.
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 5 previous errors
+-> Removed impl solution (its for LeetCode) and removed parentheses.
+
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error[E0425]: cannot find value `name` in this scope
+    --> src/main.rs:6:36
+    |
+    6 |             println!("Length: {}", name.len());
+    |                                    ^^^^ not found in this scope
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:4:15
+    |
+    4 |         if -2**31 <= x && x <= 2**31-1 {
+    |               ^^^ can't be dereferenced
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:4:34
+    |
+    4 |         if -2**31 <= x && x <= 2**31-1 {
+    |                                  ^^^ can't be dereferenced
+
+    error[E0308]: mismatched types
+    --> src/main.rs:4:40
+    |
+    4 |           if -2**31 <= x && x <= 2**31-1 {
+    |  ________________________________________^
+    5 | |             let x_string = x.to_string();
+    6 | |             println!("Length: {}", name.len());
+    7 | |         }
+    | |_________^ expected `bool`, found `()`
+
+    Some errors have detailed explanations: E0308, E0425, E0614.
+    For more information about an error, try `rustc --explain E0308`.
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 4 previous errors
+-> Changed name. to x_string. in the println
+
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:4:15
+    |
+    4 |         if -2**31 <= x && x <= (2**31)-1 {
+    |               ^^^ can't be dereferenced
+
+    error[E0614]: type `{integer}` cannot be dereferenced
+    --> src/main.rs:4:35
+    |
+    4 |         if -2**31 <= x && x <= (2**31)-1 {
+    |                                   ^^^ can't be dereferenced
+
+    error[E0308]: mismatched types
+    --> src/main.rs:4:42
+    |
+    4 |           if -2**31 <= x && x <= (2**31)-1 {
+    |  __________________________________________^
+    5 | |             let x_string = x.to_string();
+    6 | |             println!("Length: {}", x_string.len());
+    7 | |         }
+    | |_________^ expected `bool`, found `()`
+
+    Some errors have detailed explanations: E0308, E0614.
+    For more information about an error, try `rustc --explain E0308`.
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 3 previous errors
+-> Basically, ** operator don't exist, we have to use pow() function to raise a number to a power.
+    put pow like this :  if pow(2,31) <= x && x <= (pow(2,31))-1 
+
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error[E0308]: mismatched types
+    --> src/main.rs:5:50
+    |
+    5 |           if -constraint <= x && x <= constraint-1 {
+    |  __________________________________________________^
+    6 | |             let x_string = x.to_string();
+    7 | |             println!("Length: {}", x_string.len());
+    8 | |         } 
+    | |_________^ expected `bool`, found `()`
+
+    For more information about this error, try `rustc --explain E0308`.
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 1 previous error
+->Changed the program, changed constraint from i32 to u32 so I get a integer.
+
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error[E0425]: cannot find value `x_string` in this scope
+    --> src/main.rs:7:28
+    |
+    5 |     let _x_string = x.to_string();
+    |         --------- `_x_string` defined here
+    6 |     println!("Hello, World!");
+    7 |     println!("Length: {}", x_string.len());
+    |                            ^^^^^^^^
+    |
+    help: the leading underscore in `_x_string` marks it as unused, consider renaming it to `x_string`
+    |
+    5 -     let _x_string = x.to_string();
+    5 +     let x_string = x.to_string();
+    |
+
+    For more information about this error, try `rustc --explain E0425`.
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 1 previous error
+-> x_string was _x_string, which was not right because I used it.
+
+    Compiling Palindrome_Number v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Palindrome_Number/Palindrome_Number)
+    error[E0277]: the trait bound `u32: From<i32>` is not satisfied
+    --> src/main.rs:4:23
+    |
+    4 |     if -4294967296 <= u32::from(x) && u32::from(x) <= 4294967295 {
+    |                       ^^^ the trait `From<i32>` is not implemented for `u32`
+    |
+    = help: the following other types implement trait `From<T>`:
+                `u32` implements `From<Char>`
+                `u32` implements `From<Ipv4Addr>`
+                `u32` implements `From<bool>`
+                `u32` implements `From<char>`
+                `u32` implements `From<u16>`
+                `u32` implements `From<u8>`
+
+    error[E0277]: the trait bound `u32: Neg` is not satisfied
+    --> src/main.rs:4:8
+    |
+    4 |     if -4294967296 <= u32::from(x) && u32::from(x) <= 4294967295 {
+    |        ^^^^^^^^^^^ the trait `Neg` is not implemented for `u32`
+    |
+    = help: the following other types implement trait `Neg`:
+                &f128
+                &f16
+                &f32
+                &f64
+                &i128
+                &i16
+                &i32
+                &i64
+            and 12 others
+
+    error[E0277]: the trait bound `u32: From<i32>` is not satisfied
+    --> src/main.rs:4:39
+    |
+    4 |     if -4294967296 <= u32::from(x) && u32::from(x) <= 4294967295 {
+    |                                       ^^^ the trait `From<i32>` is not implemented for `u32`
+    |
+    = help: the following other types implement trait `From<T>`:
+                `u32` implements `From<Char>`
+                `u32` implements `From<Ipv4Addr>`
+                `u32` implements `From<bool>`
+                `u32` implements `From<char>`
+                `u32` implements `From<u16>`
+                `u32` implements `From<u8>`
+
+    For more information about this error, try `rustc --explain E0277`.
+    error: could not compile `Palindrome_Number` (bin "Palindrome_Number") due to 3 previous errors
+-> As the number is an i32 and not a u32, we don't need to check if -2**31 <= x <= 2**31 - 1, it will always be   
+I just did stupid stuff for nothing. Unbelievable.
