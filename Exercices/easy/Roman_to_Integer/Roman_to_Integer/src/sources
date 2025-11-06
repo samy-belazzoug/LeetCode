@@ -1,0 +1,17 @@
+W3Schools :
+    https://www.w3schools.com/rust/rust_strings.php
+        -->Reminders on strings
+    https://www.w3schools.com/rust/rust_if_else.php
+        -->Reminders on if
+    https://www.w3schools.com/rust/rust_operators.php
+        -->Reminders on logical operators
+    https://www.w3schools.com/rust/rust_match.php
+        --> What is Match
+
+Dev.community :
+    https://dev.to/ouma_ouma/rust-tutorial-mastering-strings-with-real-examples-pb1
+        -->Apparently, len() gives the byte size of the string, we have to use chars().count() to get the real string lenght. Plus, strings are encoded in UTF-8, which allows more customizable text, but less practical to code... duh
+
+Rust Official :
+    https://doc.rust-lang.org/std/option/
+        -->How to use Some() and Option<char>

@@ -1,0 +1,21 @@
+So, basically, we have first two mutable variables :
+    -integer : will be the returned result
+    -counter : will loop through the string
+
+We loop with a while loop, not a for because I have more freedom with the counter, 
+which would not work in a for loop
+
+At each step, we first check for I, X, C and their exception
+e.g, bacically, for I
+if the element ahead of him (s.chars().nth(counter+1)) is 'V', you add 4 to the integer
+if its 'X', you add 9 to the integer.
+if there is no exception, we simply add their proper values to the integer and increment the counter by 1
+
+To avoid weird behaviour, if there is an exception, we have to add 2 to the counter to skip the letter after I.
+We want :
+IXII = 11 (IX = 9, then I = 1, then I = 1)
+not :
+IXII = 21 (IX = 9, then X = 10, then I = 1, then I = 1)
+
+at the end, we check if the value is not valid, we put the integer to 0, 
+tells the user its wrong and break the loop so it returns 0

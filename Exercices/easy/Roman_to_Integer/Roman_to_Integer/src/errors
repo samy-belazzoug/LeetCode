@@ -1,0 +1,671 @@
+                cargo run main.rs
+                Compiling Roman_to_Integer v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer)
+                error: character literal may only contain one codepoint
+                --> src/main.rs:24:27
+                |
+                24 |     println!(roman_to_int('XI'));
+                |                           ^^^^
+                |
+                help: if you meant to write a string literal, use double quotes
+                |
+                24 -     println!(roman_to_int('XI'));
+                24 +     println!(roman_to_int("XI"));
+                |
+
+                error: format argument must be a string literal
+                --> src/main.rs:24:14
+                |
+                24 |     println!(roman_to_int('XI'));
+                |              ^^^^^^^^^^^^^^^^^^
+                |
+                help: you might be missing a string literal to format with
+                |
+                24 |     println!("{}", roman_to_int('XI'));
+                |              +++++
+
+                error[E0308]: mismatched types
+                --> src/main.rs:4:22
+                |
+                4 |         for i in 1..=s.chars() {
+                |                  ----^^^^^^^^^
+                |                  |   |
+                |                  |   expected integer, found `Chars<'_>`
+                |                  arguments to this function are incorrect
+                |
+                note: associated function defined here
+                --> /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/core/src/ops/range.rs:378:18
+
+                error[E0308]: mismatched types
+                --> src/main.rs:5:26
+                |
+                5 |             if      i == 'I' { count += 1;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:5:23
+                |
+                5 |             if      i == 'I' { count += 1;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:7:26
+                |
+                7 |             else if i == 'V' { count += 5;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:7:23
+                |
+                7 |             else if i == 'V' { count += 5;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:8:26
+                |
+                8 |             else if i == 'X' { count += 10;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:8:23
+                |
+                8 |             else if i == 'X' { count += 10;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:9:26
+                |
+                9 |             else if i == 'L' { count += 50;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:9:23
+                |
+                9 |             else if i == 'L' { count += 50;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:10:26
+                |
+                10 |             else if i == 'C' { count += 100;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:10:23
+                |
+                10 |             else if i == 'C' { count += 100;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:11:26
+                |
+                11 |             else if i == 'D' { count += 500;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:11:23
+                |
+                11 |             else if i == 'D' { count += 500;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:12:26
+                |
+                12 |             else if i == 'M' { count += 1000;}
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:12:23
+                |
+                12 |             else if i == 'M' { count += 1000;}
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                Some errors have detailed explanations: E0277, E0308.
+                For more information about an error, try `rustc --explain E0277`.
+                error: could not compile `Roman_to_Integer` (bin "Roman_to_Integer") due to 17 previous errors
+Maybe I put 1...s.chars, which is not what I wanted.
+Let's put if i in s.chars()
+
+
+                cargo run main.rs
+                Compiling Roman_to_Integer v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer)
+                error: character literal may only contain one codepoint
+                --> src/main.rs:24:27
+                |
+                24 |     println!(roman_to_int('XI'));
+                |                           ^^^^
+                |
+                help: if you meant to write a string literal, use double quotes
+                |
+                24 -     println!(roman_to_int('XI'));
+                24 +     println!(roman_to_int("XI"));
+                |
+
+                error: format argument must be a string literal
+                --> src/main.rs:24:14
+                |
+                24 |     println!(roman_to_int('XI'));
+                |              ^^^^^^^^^^^^^^^^^^
+                |
+                help: you might be missing a string literal to format with
+                |
+                24 |     println!("{}", roman_to_int('XI'));
+                |              +++++
+
+                error[E0308]: mismatched types
+                --> src/main.rs:4:22
+                |
+                4 |         for i in 1..=s.chars() {
+                |                  ----^^^^^^^^^
+                |                  |   |
+                |                  |   expected integer, found `Chars<'_>`
+                |                  arguments to this function are incorrect
+                |
+                note: associated function defined here
+                --> /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/core/src/ops/range.rs:378:18
+
+                error[E0308]: mismatched types
+                --> src/main.rs:5:26
+                |
+                5 |             if      i == 'I' { count += 1;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:5:23
+                |
+                5 |             if      i == 'I' { count += 1;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:7:26
+                |
+                7 |             else if i == 'V' { count += 5;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:7:23
+                |
+                7 |             else if i == 'V' { count += 5;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:8:26
+                |
+                8 |             else if i == 'X' { count += 10;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:8:23
+                |
+                8 |             else if i == 'X' { count += 10;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:9:26
+                |
+                9 |             else if i == 'L' { count += 50;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:9:23
+                |
+                9 |             else if i == 'L' { count += 50;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:10:26
+                |
+                10 |             else if i == 'C' { count += 100;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:10:23
+                |
+                10 |             else if i == 'C' { count += 100;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:11:26
+                |
+                11 |             else if i == 'D' { count += 500;} 
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:11:23
+                |
+                11 |             else if i == 'D' { count += 500;} 
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                error[E0308]: mismatched types
+                --> src/main.rs:12:26
+                |
+                12 |             else if i == 'M' { count += 1000;}
+                |                          ^^^ expected integer, found `char`
+
+                error[E0277]: can't compare `{integer}` with `char`
+                --> src/main.rs:12:23
+                |
+                12 |             else if i == 'M' { count += 1000;}
+                |                       ^^ no implementation for `{integer} == char`
+                |
+                = help: the trait `PartialEq<char>` is not implemented for `{integer}`
+                = help: the following other types implement trait `PartialEq<Rhs>`:
+                            f128
+                            f16
+                            f32
+                            f64
+                            i128
+                            i16
+                            i32
+                            i64
+                        and 8 others
+
+                Some errors have detailed explanations: E0277, E0308.
+                For more information about an error, try `rustc --explain E0277`.
+                error: could not compile `Roman_to_Integer` (bin "Roman_to_Integer") due to 17 previous errors
+                samy@ROG-Zephyrustre:~/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer$ cargo run main.rs
+                Compiling Roman_to_Integer v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer)
+                error: character literal may only contain one codepoint
+                --> src/main.rs:24:27
+                |
+                24 |     println!(roman_to_int('XI'));
+                |                           ^^^^
+                |
+                help: if you meant to write a string literal, use double quotes
+                |
+                24 -     println!(roman_to_int('XI'));
+                24 +     println!(roman_to_int("XI"));
+                |
+
+                error: format argument must be a string literal
+                --> src/main.rs:24:14
+                |
+                24 |     println!(roman_to_int('XI'));
+                |              ^^^^^^^^^^^^^^^^^^
+                |
+                help: you might be missing a string literal to format with
+                |
+                24 |     println!("{}", roman_to_int('XI'));
+                |              +++++
+
+                warning: value assigned to `count` is never read
+                --> src/main.rs:15:13
+                |
+                15 |             count = 0;
+                |             ^^^^^
+                |
+                = help: maybe it is overwritten before being read?
+                = note: `#[warn(unused_assignments)]` on by default
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:5:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                5 |             if      i == 'I' { count += 1;} 
+                |                                ^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:7:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                7 |             else if i == 'V' { count += 5;} 
+                |                                ^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:8:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                8 |             else if i == 'X' { count += 10;} 
+                |                                ^^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:9:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                9 |             else if i == 'L' { count += 50;} 
+                |                                ^^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:10:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                10 |             else if i == 'C' { count += 100;} 
+                |                                ^^^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:11:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                11 |             else if i == 'D' { count += 500;} 
+                |                                ^^^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:12:32
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                12 |             else if i == 'M' { count += 1000;}
+                |                                ^^^^^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                error[E0384]: cannot assign twice to immutable variable `count`
+                --> src/main.rs:15:13
+                |
+                2 |     let count: i32 = 0;
+                |         ----- first assignment to `count`
+                ...
+                15 |             count = 0;
+                |             ^^^^^^^^^ cannot assign twice to immutable variable
+                |
+                help: consider making this binding mutable
+                |
+                2 |     let mut count: i32 = 0;
+                |         +++
+
+                For more information about this error, try `rustc --explain E0384`.
+                warning: `Roman_to_Integer` (bin "Roman_to_Integer") generated 1 warning
+                error: could not compile `Roman_to_Integer` (bin "Roman_to_Integer") due to 10 previous errors; 1 warning emitted
+This happened because I forget to put mut for count, as its not a const.
+
+                cargo run main.rs
+                Compiling Roman_to_Integer v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer)
+                error: character literal may only contain one codepoint
+                --> src/main.rs:24:14
+                |
+                24 |     println!('{}',roman_to_int('XI'));
+                |              ^^^^
+                |
+                help: if you meant to write a string literal, use double quotes
+                |
+                24 -     println!('{}',roman_to_int('XI'));
+                24 +     println!("{}",roman_to_int('XI'));
+                |
+
+                error: character literal may only contain one codepoint
+                --> src/main.rs:24:32
+                |
+                24 |     println!('{}',roman_to_int('XI'));
+                |                                ^^^^
+                |
+                help: if you meant to write a string literal, use double quotes
+                |
+                24 -     println!('{}',roman_to_int('XI'));
+                24 +     println!('{}',roman_to_int("XI"));
+                |
+
+                warning: value assigned to `count` is never read
+                --> src/main.rs:15:17
+                |
+                15 |                 count = 0;
+                |                 ^^^^^
+                |
+                = help: maybe it is overwritten before being read?
+                = note: `#[warn(unused_assignments)]` on by default
+
+                warning: `Roman_to_Integer` (bin "Roman_to_Integer") generated 1 warning
+                error: could not compile `Roman_to_Integer` (bin "Roman_to_Integer") due to 2 previous errors; 1 warning emitted
+I didnt knew that Strings needs to be enters absolutely with "" and not ''. I learn something (i'll surely forgets xD).
+
+
+                cargo run main.rs
+                Compiling Roman_to_Integer v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer)
+                error: character literal may only contain one codepoint
+                --> src/main.rs:24:14
+                |
+                24 |     println!('{}',roman_to_int("X"));
+                |              ^^^^
+                |
+                help: if you meant to write a string literal, use double quotes
+                |
+                24 -     println!('{}',roman_to_int("X"));
+                24 +     println!("{}",roman_to_int("X"));
+                |
+
+                error: expected `;`, found keyword `return`
+                --> src/main.rs:15:55
+                |
+                15 |                 println("This is not a valid string.")
+                |                                                       ^ help: add `;` here
+                16 |                 return 1;
+                |                 ------ unexpected token
+
+                error: could not compile `Roman_to_Integer` (bin "Roman_to_Integer") due to 2 previous errors
+Okay, so '' is def banned. Plus, I removed count in the else condition and put an printed error message for the moment.
+
+                cargo run main.rs
+                Compiling Roman_to_Integer v0.1.0 (/home/samy/development/algorithms_development/github/LeetCode/Exercices/easy/Roman_to_Integer/Roman_to_Integer)
+                error[E0423]: expected function, found macro `println`
+                --> src/main.rs:15:17
+                |
+                15 |                 println("This is not a valid string.");
+                |                 ^^^^^^^ not a function
+                |
+                help: use `!` to invoke the macro
+                |
+                15 |                 println!("This is not a valid string.");
+                |                        +
+
+                error[E0308]: mismatched types
+                --> src/main.rs:24:32
+                |
+                24 |     println!("{}",roman_to_int("X"));
+                |                   ------------ ^^^ expected `String`, found `&str`
+                |                   |
+                |                   arguments to this function are incorrect
+                |
+                note: function defined here
+                --> src/main.rs:1:8
+                |
+                1 | pub fn roman_to_int(s: String) -> i32 {
+                |        ^^^^^^^^^^^^ ---------
+                help: try using a conversion method
+                |
+                24 |     println!("{}",roman_to_int("X".to_string()));
+                |                                   ++++++++++++
+
+                Some errors have detailed explanations: E0308, E0423.
+                For more information about an error, try `rustc --explain E0308`.
+                error: could not compile `Roman_to_Integer` (bin "Roman_to_Integer") due to 2 previous errors
+Okay... I'll follow what they advised me. So converts from &str to String. Also corrected println and put println!
